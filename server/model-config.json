@@ -35,5 +35,13 @@
   },
   "Note": {
     "dataSource": "db"
+  },
+  "Supermarket": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "db",
+    "public": true
   }
 }
