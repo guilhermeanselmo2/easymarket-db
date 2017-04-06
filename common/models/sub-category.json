@@ -1,6 +1,6 @@
 {
-  "name": "Category",
-  "plural": "Categories",
+  "name": "SubCategory",
+  "plural": "SubCategories",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -18,14 +18,9 @@
   },
   "validations": [],
   "relations": {
-    "supermarket": {
+    "category": {
       "type": "belongsTo",
-      "model": "Supermarket",
-      "foreignKey": ""
-    },
-    "subCategories": {
-      "type": "hasMany",
-      "model": "SubCategory",
+      "model": "Category",
       "foreignKey": ""
     }
   },
