@@ -1,10 +1,11 @@
 {
-  "name": "SubCategory",
-  "plural": "SubCategories",
+  "name": "Product",
+  "plural": "Products",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "forceId": true
   },
   "properties": {
     "name": {
@@ -14,18 +15,18 @@
     "link": {
       "type": "string",
       "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true,
+      "default": 0
     }
   },
   "validations": [],
   "relations": {
-    "category": {
+    "subCategory": {
       "type": "belongsTo",
-      "model": "Category",
-      "foreignKey": ""
-    },
-    "products": {
-      "type": "hasMany",
-      "model": "Product",
+      "model": "SubCategory",
       "foreignKey": ""
     }
   },

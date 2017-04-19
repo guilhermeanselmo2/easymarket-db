@@ -47,5 +47,9 @@
   "SubCategory": {
     "dataSource": "db",
     "public": true
+  },
+  "Product": {
+    "dataSource": "db",
+    "public": true
   }
 }
